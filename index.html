@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="First Class Furniture Ballymena – Northern Ireland's largest furniture showroom. Premium sofas, beds & bedroom furniture. Free delivery over £500. Klarna & Clearpay available." />
+  <meta name="keywords" content="furniture Ballymena, sofas Northern Ireland, beds Ballymena, First Class Furniture, recliner sofa NI, bedroom furniture, corner sofa" />
+  <meta property="og:title" content="First Class Furniture | Ballymena, Northern Ireland" />
+  <meta property="og:description" content="Quality furniture at affordable prices. 148+ items in stock. Visit our showroom at 67-73 Church Street, Ballymena." />
+  <title>First Class Furniture | Ballymena, Northern Ireland</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#home" class="navbar__logo" aria-label="First Class Furniture – Home">
+        <span class="logo-line-1">FIRST CLASS</span>
+        <span class="logo-line-2">FURNITURE</span>
+      </a>
+      <nav class="navbar__nav" id="nav-menu" aria-label="Main navigation">
+        <ul class="navbar__list" role="list">
+          <li><a href="#shop" class="navbar__link">Shop</a></li>
+          <li><a href="#delivery" class="navbar__link">Delivery</a></li>
+          <li><a href="#gallery" class="navbar__link">Gallery</a></li>
+          <li><a href="#contact" class="navbar__link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="navbar__actions">
+        <a href="tel:02894466705" class="btn btn--ghost btn--sm" aria-label="Call us on 028 9446 6705">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 3h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 10.6a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call Us
+        </a>
+        <button class="btn btn--gold btn--sm" onclick="openReserveGeneral()">Reserve Online</button>
+      </div>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ═══ MOBILE DRAWER ═══ -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true" role="dialog" aria-label="Navigation menu">
+    <button class="mobile-drawer__close" id="drawer-close" aria-label="Close menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="mobile-drawer__logo">
+      <span>FIRST CLASS</span>
+      <span>FURNITURE</span>
+    </div>
+    <nav aria-label="Mobile navigation">
+      <ul role="list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#shop">Shop All Products</a></li>
+        <li><a href="#delivery">Delivery & Collection</a></li>
+        <li><a href="#gallery">Customer Gallery</a></li>
+        <li><a href="#contact">Contact & Hours</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-drawer__footer">
+      <a href="tel:02894466705" class="btn btn--dark btn--block">028 9446 6705</a>
+      <a href="https://wa.me/447360657738" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp btn--block">WhatsApp Us</a>
+    </div>
+  </div>
+  <div class="overlay" id="overlay" aria-hidden="true"></div>
+
+  <main id="main">
+
+    <!-- ═══ HERO ═══ -->
+    <section id="home" class="hero" aria-label="Welcome to First Class Furniture">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__content container">
+        <div class="hero__eyebrow">Ballymena's Largest Furniture Showroom</div>
+        <h1 class="hero__title">
+          Where Quality<br/>
+          <em>Meets Comfort.</em>
+        </h1>
+        <p class="hero__sub">Premium sofas, beds &amp; bedroom furniture for every home and budget.<br/>Fast delivery across all of Northern Ireland.</p>
+        <div class="hero__ctas">
+          <a href="#shop" class="btn btn--gold btn--lg">Browse Collection</a>
+          <a href="#contact" class="btn btn--hero-outline btn--lg">Visit Showroom</a>
+        </div>
+        <ul class="hero__trust" aria-label="Key benefits" role="list">
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Free delivery over £500
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Klarna &amp; Clearpay available
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Reserve online, pay in store
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            148+ items in stock
+          </li>
+        </ul>
+      </div>
+      <div class="hero__scroll-indicator" aria-hidden="true">
+        <div class="hero__scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- ═══ ANNOUNCEMENT BAR ═══ -->
+    <div class="announce-bar" aria-label="Announcements and promotions" role="marquee">
+      <div class="announce-track" aria-hidden="true">
+        <span>Free delivery on orders over £500</span>
+        <span class="announce-dot" aria-hidden="true">•</span>
+        <span>Reserve online — pay in store within 24 hours</span>
+        <span class="announce-dot" aria-hidden="true">•</span>
+        <span>Klarna &amp; Clearpay available</span>
+        <span class="announce-dot" aria-hidden="true">•</span>
+        <span>100s of items in stock — fast NI delivery</span>
+        <span class="announce-dot" aria-hidden="true">•</span>
+        <span>67-73 Church Street, Ballymena BT43 6DD</span>
+        <span class="announce-dot" aria-hidden="true">•</span>
+        <span>Mon–Sat 10am–5pm &nbsp;|&nbsp; Sun 1pm–5pm</span>
+        <span class="announce-dot" aria-hidden="true">•</span>
+        <span>Free delivery on orders over £500</span>
+        <span class="announce-dot" aria-hidden="true">•</span>
+        <span>Reserve online — pay in store within 24 hours</span>
+        <span class="announce-dot" aria-hidden="true">•</span>
+        <span>Klarna &amp; Clearpay available</span>
+        <span class="announce-dot" aria-hidden="true">•</span>
+        <span>100s of items in stock — fast NI delivery</span>
+        <span class="announce-dot" aria-hidden="true">•</span>
+        <span>67-73 Church Street, Ballymena BT43 6DD</span>
+        <span class="announce-dot" aria-hidden="true">•</span>
+        <span>Mon–Sat 10am–5pm &nbsp;|&nbsp; Sun 1pm–5pm</span>
+        <span class="announce-dot" aria-hidden="true">•</span>
+      </div>
+    </div>
+
+    <!-- ═══ WHY CHOOSE US ═══ -->
+    <section class="why section" aria-labelledby="why-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-eyebrow">Why First Class?</p>
+          <h2 id="why-title" class="section-title">Ballymena's Most Trusted<br/>Furniture Store</h2>
+        </header>
+        <div class="why__grid">
+          <div class="why-card reveal">
+            <div class="why-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 36V22l20-10 20 10v14"/><rect x="14" y="26" width="20" height="10" rx="1"/><path d="M24 26v10M4 22h40"/></svg>
+            </div>
+            <h3>Ballymena's Largest Showroom</h3>
+            <p>Visit our massive showroom at 67–73 Church Street. With hundreds of items on display, you can see, touch, and feel your furniture before you buy.</p>
+          </div>
+          <div class="why-card reveal">
+            <div class="why-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="18" width="36" height="20" rx="2"/><path d="M38 26h6l4 8v4h-6"/><circle cx="12" cy="42" r="4"/><circle cx="42" cy="42" r="4"/><path d="M16 42h22"/></svg>
+            </div>
+            <h3>Fast NI-Wide Delivery</h3>
+            <p>We deliver quickly across all of Northern Ireland. Standard delivery from just £49.99, or completely free when you spend over £500.</p>
+          </div>
+          <div class="why-card reveal">
+            <div class="why-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="8" width="40" height="32" rx="3"/><path d="M4 18h40M16 8v10"/><circle cx="12" cy="30" r="3"/><rect x="22" y="27" width="14" height="6" rx="1"/></svg>
+            </div>
+            <h3>Flexible Payments</h3>
+            <p>Pay your way — cash, card, Klarna, or Clearpay. Reserve any item online and pay in store within 24 hours. Small deposit secures.</p>
+          </div>
+          <div class="why-card reveal">
+            <div class="why-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M24 4l5.1 10.3 11.4 1.7-8.3 8 2 11.3L24 30 13.8 35.3l2-11.3-8.3-8 11.4-1.7z"/></svg>
+            </div>
+            <h3>Quality Guaranteed</h3>
+            <p>Every piece is selected for quality, comfort, and lasting value. Furniture to suit all budgets — from affordable essentials to luxury recliners.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CATEGORIES ═══ -->
+    <section class="categories section" aria-labelledby="cat-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-eyebrow">Shop by Room</p>
+          <h2 id="cat-title" class="section-title">Find the Perfect Piece</h2>
+        </header>
+        <div class="cat-grid">
+          <button class="cat-card cat-card--sofas reveal" data-filter="sofas" aria-label="Browse sofas and sets">
+            <div class="cat-card__content">
+              <h3>Sofas &amp; Sets</h3>
+              <p>Corner sofas, 3+2 sets, recliners, sofa beds &amp; armchairs</p>
+              <span class="cat-card__link" aria-hidden="true">Browse Sofas &rarr;</span>
+            </div>
+          </button>
+          <button class="cat-card cat-card--beds reveal" data-filter="beds" aria-label="Browse beds and mattresses">
+            <div class="cat-card__content">
+              <h3>Beds &amp; Mattresses</h3>
+              <p>Double, kingsize &amp; divan beds — with optional mattress bundles</p>
+              <span class="cat-card__link" aria-hidden="true">Browse Beds &rarr;</span>
+            </div>
+          </button>
+          <button class="cat-card cat-card--bedroom reveal" data-filter="bedroom" aria-label="Browse bedroom furniture">
+            <div class="cat-card__content">
+              <h3>Bedroom Furniture</h3>
+              <p>Wardrobes, drawer units &amp; complete bedroom sets</p>
+              <span class="cat-card__link" aria-hidden="true">Browse Bedroom &rarr;</span>
+            </div>
+          </button>
+          <button class="cat-card cat-card--sale reveal" data-filter="sale" aria-label="Browse sale and clearance items">
+            <div class="cat-card__content">
+              <div class="cat-card__badge">HOT DEALS</div>
+              <h3>Sale &amp; Clearance</h3>
+              <p>Ex-display &amp; clearance items at unbeatable prices</p>
+              <span class="cat-card__link" aria-hidden="true">View Sale &rarr;</span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ SHOP / PRODUCTS ═══ -->
+    <section id="shop" class="products section" aria-labelledby="shop-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-eyebrow">Our Collection</p>
+          <h2 id="shop-title" class="section-title">Shop Our Full Range</h2>
+          <p class="section-sub">All prices include VAT. Small deposit secures any item. <span class="free-delivery-note">Free delivery on orders over £500.</span></p>
+        </header>
+
+        <div class="filter-tabs" role="tablist" aria-label="Filter products by category">
+          <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All Products</button>
+          <button class="filter-tab" data-filter="sofas" role="tab" aria-selected="false">Sofas &amp; Sets</button>
+          <button class="filter-tab" data-filter="beds" role="tab" aria-selected="false">Beds</button>
+          <button class="filter-tab" data-filter="bedroom" role="tab" aria-selected="false">Bedroom</button>
+          <button class="filter-tab" data-filter="sale" role="tab" aria-selected="false">Sale</button>
+        </div>
+
+        <div class="product-grid" id="product-grid" aria-live="polite" aria-label="Product listing">
+          <!-- Populated by script.js -->
+        </div>
+
+        <div class="products__footer">
+          <p>Showing <strong id="product-count">all</strong> products. Visit our showroom to see our full range of 148+ items.</p>
+          <a href="tel:02894466705" class="btn btn--outline">Call to Enquire</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ DELIVERY & COLLECTION ═══ -->
+    <section id="delivery" class="delivery section" aria-labelledby="delivery-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-eyebrow">Getting Your Furniture</p>
+          <h2 id="delivery-title" class="section-title">Delivery &amp; Collection</h2>
+        </header>
+        <div class="delivery__grid">
+
+          <div class="delivery-card reveal">
+            <div class="delivery-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 52V24l24-12 24 12v28"/><rect x="20" y="36" width="24" height="16" rx="1"/><path d="M32 36v16M8 28h48"/></svg>
+            </div>
+            <div class="delivery-card__badge delivery-card__badge--free">FREE</div>
+            <h3>Collect In Store</h3>
+            <p>Visit our showroom and take your furniture home the same day. Our friendly team will help load your vehicle at no extra charge.</p>
+            <ul class="delivery-card__features" role="list">
+              <li>No delivery charge</li>
+              <li>Same day available</li>
+              <li>Team assists with loading</li>
+              <li>Open 7 days a week</li>
+            </ul>
+            <a href="tel:02894466705" class="btn btn--dark btn--block">Call to Arrange</a>
+          </div>
+
+          <div class="delivery-card delivery-card--highlight reveal">
+            <div class="delivery-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="20" width="42" height="28" rx="2"/><path d="M44 30h10l8 12v6h-8"/><circle cx="14" cy="52" r="6"/><circle cx="48" cy="52" r="6"/><path d="M20 52h24"/></svg>
+            </div>
+            <h3>Home Delivery</h3>
+            <p>Our professional 2-man delivery team will bring your furniture to your door and place it in the room of your choice across all of Northern Ireland.</p>
+            <div class="delivery-tiers">
+              <div class="delivery-tier">
+                <span>Standard Delivery</span>
+                <strong>£49.99</strong>
+              </div>
+              <div class="delivery-tier delivery-tier--free">
+                <span>Orders over £500</span>
+                <strong class="tier-free">FREE</strong>
+              </div>
+            </div>
+            <ul class="delivery-card__features" role="list">
+              <li>All of Northern Ireland</li>
+              <li>Professional 2-man team</li>
+              <li>Room of choice placement</li>
+              <li>Packaging removed</li>
+            </ul>
+            <a href="#shop" class="btn btn--gold btn--block">Shop &amp; Get Delivered</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ PAYMENT OPTIONS ═══ -->
+    <section class="payment section" aria-labelledby="payment-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-eyebrow">Pay Your Way</p>
+          <h2 id="payment-title" class="section-title">Flexible Payment Options</h2>
+          <p class="section-sub">Multiple ways to pay — whatever works best for you and your family.</p>
+        </header>
+        <div class="payment__grid">
+
+          <div class="payment-card reveal">
+            <div class="payment-card__num" aria-hidden="true">01</div>
+            <div class="payment-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="24" cy="24" r="18"/><path d="M24 14v4M24 30v4M14 24h4M30 24h4"/><circle cx="24" cy="24" r="6"/></svg>
+            </div>
+            <h3>Reserve &amp; Pay in Store</h3>
+            <p>Reserve any item online and we'll hold it exclusively for you for <strong>24 hours</strong>. Visit our showroom and pay with cash or card — no deposit required to reserve.</p>
+            <ul class="payment-card__points" role="list">
+              <li>Item held for 24 hours</li>
+              <li>No deposit to reserve</li>
+              <li>Pay cash or card in store</li>
+            </ul>
+            <button class="btn btn--dark btn--sm" onclick="openReserveGeneral()">Reserve an Item</button>
+          </div>
+
+          <div class="payment-card reveal">
+            <div class="payment-card__num" aria-hidden="true">02</div>
+            <div class="payment-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="10" width="40" height="28" rx="3"/><path d="M4 18h40M8 26h8M8 30h6"/></svg>
+            </div>
+            <h3>Card &amp; Digital Wallets</h3>
+            <p>Pay instantly with your preferred card or digital wallet. We accept all major payment methods in store and online for your convenience.</p>
+            <div class="payment-badges" aria-label="Accepted payment methods">
+              <span class="pbadge">VISA</span>
+              <span class="pbadge">Mastercard</span>
+              <span class="pbadge">Amex</span>
+              <span class="pbadge">Maestro</span>
+              <span class="pbadge">Apple Pay</span>
+              <span class="pbadge">Google Pay</span>
+              <span class="pbadge">PayPal</span>
+              <span class="pbadge">Shop Pay</span>
+            </div>
+            <a href="tel:02894466705" class="btn btn--dark btn--sm">Call to Pay</a>
+          </div>
+
+          <div class="payment-card payment-card--klarna reveal">
+            <div class="payment-card__num" aria-hidden="true">03</div>
+            <div class="klarna-logo" aria-label="Klarna">
+              <span>klarna</span>
+            </div>
+            <h3>Klarna &amp; Clearpay</h3>
+            <p>Spread the cost of your new furniture with flexible instalment plans. Get your furniture now and pay over time — no stress, no rush.</p>
+            <div class="klarna-plans">
+              <div class="klarna-plan">
+                <strong>Pay in 3</strong>
+                <span>3 interest-free instalments</span>
+              </div>
+              <div class="klarna-plan">
+                <strong>Pay in 30 Days</strong>
+                <span>Try first, pay later</span>
+              </div>
+              <div class="klarna-plan">
+                <strong>Monthly Financing</strong>
+                <span>6 to 36 month plans</span>
+              </div>
+            </div>
+            <a href="#shop" class="btn btn--gold btn--sm">Shop with Klarna</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ GALLERY ═══ -->
+    <section id="gallery" class="gallery section" aria-labelledby="gallery-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-eyebrow">Customer Homes</p>
+          <h2 id="gallery-title" class="section-title">Delivered &amp; Loved</h2>
+          <p class="section-sub">Real furniture, real homes, real customers across Northern Ireland.</p>
+        </header>
+        <div class="gallery__grid" aria-label="Customer gallery">
+          <div class="gallery-item gallery-item--wide reveal" style="--gi-gradient: linear-gradient(135deg,#3d2b20,#7a5438)" aria-label="Living room furniture delivered to customer">
+            <div class="gallery-item__inner"><span class="gallery-item__label">Living Room</span></div>
+          </div>
+          <div class="gallery-item reveal" style="--gi-gradient: linear-gradient(135deg,#1e2535,#3a507a)" aria-label="Corner sofa installed in customer home">
+            <div class="gallery-item__inner"><span class="gallery-item__label">Corner Sofa</span></div>
+          </div>
+          <div class="gallery-item reveal" style="--gi-gradient: linear-gradient(135deg,#1e2d1e,#3a5a38)" aria-label="Bedroom furniture set up for customer">
+            <div class="gallery-item__inner"><span class="gallery-item__label">Bedroom Set</span></div>
+          </div>
+          <div class="gallery-item reveal" style="--gi-gradient: linear-gradient(135deg,#2a1a10,#6b4020)" aria-label="Recliner suite in customer living room">
+            <div class="gallery-item__inner"><span class="gallery-item__label">Recliner Suite</span></div>
+          </div>
+          <div class="gallery-item gallery-item--wide reveal" style="--gi-gradient: linear-gradient(135deg,#1a1624,#3d2d5a)" aria-label="Master bedroom with wardrobe and bed set">
+            <div class="gallery-item__inner"><span class="gallery-item__label">Master Bedroom</span></div>
+          </div>
+          <div class="gallery-item reveal" style="--gi-gradient: linear-gradient(135deg,#1f1510,#5a3810)" aria-label="Sofa set in open plan living area">
+            <div class="gallery-item__inner"><span class="gallery-item__label">Open Plan Living</span></div>
+          </div>
+          <div class="gallery-item reveal" style="--gi-gradient: linear-gradient(135deg,#0f1f1a,#2a5040)" aria-label="Sofa bed in guest room">
+            <div class="gallery-item__inner"><span class="gallery-item__label">Guest Room</span></div>
+          </div>
+          <div class="gallery-item reveal" style="--gi-gradient: linear-gradient(135deg,#251015,#5a2530)" aria-label="Kids bedroom furniture delivered and assembled">
+            <div class="gallery-item__inner"><span class="gallery-item__label">Kids Bedroom</span></div>
+          </div>
+        </div>
+        <div class="gallery__cta">
+          <p>Follow us for daily inspiration and new arrivals</p>
+          <a href="https://www.facebook.com/firstclasssofas/" target="_blank" rel="noopener noreferrer" class="btn btn--dark">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            Follow on Facebook
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ REVIEWS ═══ -->
+    <section class="reviews section" aria-labelledby="reviews-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-eyebrow">Customer Reviews</p>
+          <h2 id="reviews-title" class="section-title">What Our Customers Say</h2>
+          <div class="reviews__meta" aria-label="Rating: 4.9 out of 5 based on customer reviews">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <span>4.9 / 5 &nbsp;— Trusted by hundreds of NI families</span>
+          </div>
+        </header>
+        <div class="reviews__grid">
+          <article class="review-card reveal">
+            <div class="review-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>"Absolutely love our new corner sofa! The staff were so helpful and delivery was quick and professional. Great quality for the price — will definitely be back for more!"</blockquote>
+            <footer>
+              <div class="review-card__avatar" aria-hidden="true">SM</div>
+              <div><cite>Sarah M.</cite><span>Ballymena</span></div>
+            </footer>
+          </article>
+          <article class="review-card reveal">
+            <div class="review-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>"Brilliant selection. Got a great deal on an electric recliner set. The delivery team were so professional — set everything up perfectly. Cannot fault them at all!"</blockquote>
+            <footer>
+              <div class="review-card__avatar" aria-hidden="true">JD</div>
+              <div><cite>John D.</cite><span>Antrim</span></div>
+            </footer>
+          </article>
+          <article class="review-card reveal">
+            <div class="review-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>"Used the reserve online option — so convenient! Popped in the next day, paid cash, and got free delivery because we spent over £500. Absolutely stunning furniture too."</blockquote>
+            <footer>
+              <div class="review-card__avatar" aria-hidden="true">ET</div>
+              <div><cite>Emma T.</cite><span>Ballymoney</span></div>
+            </footer>
+          </article>
+          <article class="review-card reveal">
+            <div class="review-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>"First time buying here. The showroom is absolutely massive with a huge range of choices. Staff were brilliant — not pushy at all. Bedroom furniture looks stunning!"</blockquote>
+            <footer>
+              <div class="review-card__avatar" aria-hidden="true">MR</div>
+              <div><cite>Michael R.</cite><span>Maghera</span></div>
+            </footer>
+          </article>
+          <article class="review-card reveal">
+            <div class="review-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>"Used Klarna to spread the cost — really handy. The LED recliner sofa is absolutely incredible, worth every penny. Customer service was brilliant from start to finish."</blockquote>
+            <footer>
+              <div class="review-card__avatar" aria-hidden="true">PL</div>
+              <div><cite>Patricia L.</cite><span>Coleraine</span></div>
+            </footer>
+          </article>
+          <article class="review-card reveal">
+            <div class="review-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>"Best furniture shop in Ballymena by a mile. Huge range, brilliant prices, and the 2-man delivery team were exceptional. Already recommended to all my friends and family!"</blockquote>
+            <footer>
+              <div class="review-card__avatar" aria-hidden="true">DO</div>
+              <div><cite>David O.</cite><span>Larne</span></div>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CONTACT & HOURS ═══ -->
+    <section id="contact" class="contact section" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-eyebrow">Visit Us</p>
+          <h2 id="contact-title" class="section-title">Find Our Showroom</h2>
+        </header>
+        <div class="contact__grid">
+
+          <div class="contact-card reveal">
+            <div class="contact-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="24" cy="20" r="10"/><path d="M24 44C24 44 8 32 8 20a16 16 0 1 1 32 0c0 12-16 24-16 24z"/><circle cx="24" cy="20" r="4" fill="currentColor" opacity=".3"/></svg>
+            </div>
+            <h3>Our Location</h3>
+            <address>
+              First Class Furniture<br/>
+              67–73 Church Street<br/>
+              Ballymena, BT43 6DD<br/>
+              Northern Ireland
+            </address>
+            <a href="https://maps.google.com/?q=First+Class+Furniture,+67-73+Church+Street,+Ballymena+BT43+6DD" target="_blank" rel="noopener noreferrer" class="btn btn--outline btn--sm">Get Directions</a>
+          </div>
+
+          <div class="contact-card reveal">
+            <div class="contact-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="24" cy="24" r="20"/><path d="M24 12v12l8 4"/></svg>
+            </div>
+            <h3>Opening Hours</h3>
+            <table class="hours-table">
+              <tbody>
+                <tr><td>Monday – Friday</td><td><strong>10:00am – 5:00pm</strong></td></tr>
+                <tr><td>Saturday</td><td><strong>10:00am – 5:00pm</strong></td></tr>
+                <tr class="sunday"><td>Sunday</td><td><strong>1:00pm – 5:00pm</strong></td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="contact-card reveal">
+            <div class="contact-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M36 28c-.5-.3-3.5-1.7-4-2s-1-.3-1.4.2-1.5 2-1.9 2.3c-.3.2-.7.3-1.2.1a16.5 16.5 0 0 1-4.8-3 16.5 16.5 0 0 1-3-4.8c-.2-.5 0-.9.1-1.2.3-.4 2-1.5 2.3-1.9.3-.5.4-.9.2-1.4S21.2 13.5 21 13c-.4-1-1.3-.8-1.8-.8A4 4 0 0 0 16 14c-1 1.3-2 3.2-1.4 7A23.4 23.4 0 0 0 21 30c1.6 1.5 5 3.3 9 4.4 3.6 1 5.3.3 6.3-.8a4 4 0 0 0 1-3.3c-.1-.5-.6-.9-1.3-1.3z"/></svg>
+            </div>
+            <h3>Call Us</h3>
+            <p>Our friendly team are happy to answer questions, check stock availability, and arrange delivery or collection.</p>
+            <a href="tel:02894466705" class="contact-card__tel">028 9446 6705</a>
+          </div>
+
+          <div class="contact-card contact-card--whatsapp reveal">
+            <div class="contact-card__icon contact-card__icon--wa" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="currentColor"><path d="M24 4C12.95 4 4 12.95 4 24c0 3.64.99 7.07 2.72 10.01L4 44l10.26-2.69A19.9 19.9 0 0 0 24 44c11.05 0 20-8.95 20-20S35.05 4 24 4zm.1 34.4c-3 0-5.9-.8-8.4-2.3l-.6-.36-6.1 1.6 1.63-5.94-.39-.62A16.2 16.2 0 0 1 7.7 24.1C7.7 15 15.1 7.7 24.1 7.7c4.36 0 8.46 1.7 11.54 4.76a16.23 16.23 0 0 1 4.76 11.54c0 9-7.4 16.4-16.3 16.4zm9-12.1c-.5-.25-2.94-1.45-3.4-1.62-.46-.16-.8-.24-1.14.24-.34.5-1.3 1.62-1.6 1.95-.3.34-.6.38-1.1.13-.5-.25-2.1-.77-4-2.46a15 15 0 0 1-2.76-3.44c-.3-.5 0-.76.22-1 .21-.22.5-.57.73-.86.24-.28.32-.5.48-.82.16-.33.08-.62-.04-.87-.12-.24-1.14-2.74-1.56-3.75-.4-1-.82-.85-1.14-.87-.3 0-.63-.03-.97-.03-.34 0-.88.13-1.34.62-.46.5-1.74 1.7-1.74 4.14s1.78 4.8 2.03 5.13c.24.33 3.5 5.35 8.48 7.5 1.19.5 2.12.8 2.84 1.03 1.2.37 2.28.32 3.14.2.96-.14 2.94-1.2 3.36-2.36.4-1.17.4-2.16.28-2.37-.13-.2-.46-.33-.97-.57z"/></svg>
+            </div>
+            <h3>WhatsApp</h3>
+            <p>Message us on WhatsApp for quick enquiries, stock checks, or to send us a photo of what you're looking for.</p>
+            <a href="https://wa.me/447360657738" target="_blank" rel="noopener noreferrer" class="contact-card__tel">07360 657738</a>
+            <a href="https://wa.me/447360657738" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp btn--sm">Message on WhatsApp</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ MAP ═══ -->
+    <div class="map-section">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2298.48456!2d-6.27661!3d54.864966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4861ad865a3262cf%3A0xbbbf249b619a0b26!2sFirst%20Class%20Furniture!5e0!3m2!1sen!2suk!4v1714400000000!5m2!1sen!2suk"
+        width="100%"
+        height="420"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="First Class Furniture location on Google Maps — 67-73 Church Street, Ballymena"
+      ></iframe>
+    </div>
+
+  </main>
+
+  <!-- ═══ FLOATING WHATSAPP BUTTON ═══ -->
+  <a href="https://wa.me/447360657738" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat with us on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- ═══ RESERVE MODAL ═══ -->
+  <div class="modal" id="reserve-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal__backdrop" id="modal-backdrop"></div>
+    <div class="modal__box" role="document">
+      <button class="modal__close" id="modal-close" aria-label="Close reservation form">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="modal__header">
+        <h2 id="modal-title">Reserve This Item</h2>
+        <p id="modal-product-name" class="modal__product"></p>
+        <p class="modal__info">We'll hold this item exclusively for you for <strong>24 hours</strong>. Visit our showroom to pay — no deposit required to reserve.</p>
+      </div>
+      <form id="reserve-form" class="modal__form" novalidate>
+        <div class="form-group">
+          <label for="f-name">Full Name <abbr title="required">*</abbr></label>
+          <input type="text" id="f-name" name="name" required autocomplete="name" placeholder="John Smith" />
+          <span class="form-error" id="err-name" role="alert" aria-live="polite"></span>
+        </div>
+        <div class="form-group">
+          <label for="f-phone">Phone Number <abbr title="required">*</abbr></label>
+          <input type="tel" id="f-phone" name="phone" required autocomplete="tel" placeholder="028 XXXX XXXX" />
+          <span class="form-error" id="err-phone" role="alert" aria-live="polite"></span>
+        </div>
+        <div class="form-group">
+          <label for="f-email">Email Address <abbr title="required">*</abbr></label>
+          <input type="email" id="f-email" name="email" required autocomplete="email" placeholder="you@example.com" />
+          <span class="form-error" id="err-email" role="alert" aria-live="polite"></span>
+        </div>
+        <div class="form-group">
+          <label for="f-option">Preferred Option</label>
+          <select id="f-option" name="option">
+            <option value="collect">Collect in Store (Free)</option>
+            <option value="delivery">Home Delivery (£49.99 or free over £500)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="f-notes">Questions or Notes</label>
+          <textarea id="f-notes" name="notes" rows="3" placeholder="Any specific questions or requirements..."></textarea>
+        </div>
+        <button type="submit" class="btn btn--gold btn--block" id="submit-btn">Confirm Reservation</button>
+        <p class="modal__legal">Our team will call you within 1 business hour to confirm your reservation.</p>
+      </form>
+      <div class="modal__success" id="modal-success" hidden>
+        <div class="modal__success-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><circle cx="24" cy="24" r="20"/><polyline points="34 16 20 32 14 26"/></svg>
+        </div>
+        <h3>Reservation Confirmed!</h3>
+        <p>Our team will call you back within 1 hour to confirm. Your item is held for <strong>24 hours</strong>.</p>
+        <address class="modal__success-address">
+          <strong>First Class Furniture</strong><br/>
+          67–73 Church Street, Ballymena BT43 6DD<br/>
+          <a href="tel:02894466705">028 9446 6705</a>
+        </address>
+        <button class="btn btn--gold" id="modal-done">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <span>FIRST CLASS</span>
+            <span>FURNITURE</span>
+          </div>
+          <p>Northern Ireland's largest furniture showroom. Quality sofas, beds &amp; bedroom furniture at prices you'll love — delivered fast across NI.</p>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/firstclasssofas/" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://wa.me/447360657738" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <ul role="list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Shop All Products</a></li>
+            <li><a href="#delivery">Delivery &amp; Collection</a></li>
+            <li><a href="#gallery">Customer Gallery</a></li>
+            <li><a href="#contact">Contact &amp; Hours</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Categories</h4>
+          <ul role="list">
+            <li><a href="#shop" data-filter-link="sofas">Sofas &amp; Sets</a></li>
+            <li><a href="#shop" data-filter-link="sofas">Corner Sofas</a></li>
+            <li><a href="#shop" data-filter-link="sofas">Electric Recliners</a></li>
+            <li><a href="#shop" data-filter-link="beds">Beds &amp; Mattresses</a></li>
+            <li><a href="#shop" data-filter-link="bedroom">Bedroom Furniture</a></li>
+            <li><a href="#shop" data-filter-link="sale">Sale &amp; Clearance</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <address class="footer__contact">
+            <div>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              67–73 Church Street<br/>Ballymena BT43 6DD
+            </div>
+            <div>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 3h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 10.6a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <a href="tel:02894466705">028 9446 6705</a>
+            </div>
+            <div>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              <a href="https://wa.me/447360657738" target="_blank" rel="noopener noreferrer">WhatsApp: 07360 657738</a>
+            </div>
+            <div>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Mon–Sat: 10am–5pm<br/>Sunday: 1pm–5pm
+            </div>
+          </address>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 First Class Furniture (Ballymena) Ltd. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#shop">Privacy Policy</a>
+          <a href="#shop">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
