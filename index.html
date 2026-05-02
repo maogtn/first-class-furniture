@@ -8,6 +8,7 @@
   <meta property="og:title" content="First Class Furniture | Ballymena, Northern Ireland" />
   <meta property="og:description" content="Quality furniture at affordable prices. 148+ items in stock. Visit our showroom at 67-73 Church Street, Ballymena." />
   <title>First Class Furniture | Ballymena, Northern Ireland</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -141,6 +142,38 @@
       </div>
     </div>
 
+    <!-- ═══ STATS BAR ═══ -->
+    <section class="stats-bar" aria-label="Our achievements">
+      <div class="container">
+        <div class="stats-bar__inner">
+          <div class="stat-item">
+            <div class="stat-value">
+              <span class="stat-num" data-target="148">0</span><span class="stat-suffix">+</span>
+            </div>
+            <span class="stat-label">Items in Stock</span>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">
+              <span class="stat-num" data-target="10">0</span><span class="stat-suffix">+</span>
+            </div>
+            <span class="stat-label">Years in Ballymena</span>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">
+              <span class="stat-num" data-target="1000">0</span><span class="stat-suffix">+</span>
+            </div>
+            <span class="stat-label">Happy Customers</span>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">
+              <span class="stat-num" data-target="4.9">0</span><span class="stat-suffix">★</span>
+            </div>
+            <span class="stat-label">Customer Rating</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ═══ WHY CHOOSE US ═══ -->
     <section class="why section" aria-labelledby="why-title">
       <div class="container">
@@ -210,6 +243,13 @@
               <span class="cat-card__link" aria-hidden="true">Browse Bedroom &rarr;</span>
             </div>
           </button>
+          <button class="cat-card cat-card--tables reveal" data-filter="tables" aria-label="Browse tables and chairs">
+            <div class="cat-card__content">
+              <h3>Tables &amp; Chairs</h3>
+              <p>Dining sets, coffee tables, chairs &amp; side tables</p>
+              <span class="cat-card__link" aria-hidden="true">Browse Tables &rarr;</span>
+            </div>
+          </button>
           <button class="cat-card cat-card--sale reveal" data-filter="sale" aria-label="Browse sale and clearance items">
             <div class="cat-card__content">
               <div class="cat-card__badge">HOT DEALS</div>
@@ -236,6 +276,7 @@
           <button class="filter-tab" data-filter="sofas" role="tab" aria-selected="false">Sofas &amp; Sets</button>
           <button class="filter-tab" data-filter="beds" role="tab" aria-selected="false">Beds</button>
           <button class="filter-tab" data-filter="bedroom" role="tab" aria-selected="false">Bedroom</button>
+          <button class="filter-tab" data-filter="tables" role="tab" aria-selected="false">Tables &amp; Chairs</button>
           <button class="filter-tab" data-filter="sale" role="tab" aria-selected="false">Sale</button>
         </div>
 
@@ -386,29 +427,47 @@
           <p class="section-sub">Real furniture, real homes, real customers across Northern Ireland.</p>
         </header>
         <div class="gallery__grid" aria-label="Customer gallery">
-          <div class="gallery-item gallery-item--wide reveal" style="--gi-gradient: linear-gradient(135deg,#3d2b20,#7a5438)" aria-label="Living room furniture delivered to customer">
-            <div class="gallery-item__inner"><span class="gallery-item__label">Living Room</span></div>
+          <div class="gallery-item reveal" data-lb="0" aria-label="Massive LED U-shape recliner sofa delivered to customer home — click to enlarge">
+            <img src="img/gallery-1.jpg" alt="Massive LED U-shape recliner sofa in customer living room" loading="lazy">
+            <div class="gallery-item__inner">
+              <span class="gallery-item__label">LED U-Shape Recliner</span>
+              <div class="gallery-item__zoom" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></div>
+            </div>
           </div>
-          <div class="gallery-item reveal" style="--gi-gradient: linear-gradient(135deg,#1e2535,#3a507a)" aria-label="Corner sofa installed in customer home">
-            <div class="gallery-item__inner"><span class="gallery-item__label">Corner Sofa</span></div>
+          <div class="gallery-item reveal" data-lb="1" aria-label="Black leather corner recliner sofa in bright customer living room — click to enlarge">
+            <img src="img/gallery-2.jpg" alt="Black leather corner recliner sofa in customer home" loading="lazy">
+            <div class="gallery-item__inner">
+              <span class="gallery-item__label">Corner Leather Recliner</span>
+              <div class="gallery-item__zoom" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></div>
+            </div>
           </div>
-          <div class="gallery-item reveal" style="--gi-gradient: linear-gradient(135deg,#1e2d1e,#3a5a38)" aria-label="Bedroom furniture set up for customer">
-            <div class="gallery-item__inner"><span class="gallery-item__label">Bedroom Set</span></div>
+          <div class="gallery-item reveal" data-lb="2" aria-label="Black LED electric recliner set with blue lighting in customer home — click to enlarge">
+            <img src="img/gallery-3.jpg" alt="Black LED electric recliner set in customer living room" loading="lazy">
+            <div class="gallery-item__inner">
+              <span class="gallery-item__label">LED Electric Recliner Set</span>
+              <div class="gallery-item__zoom" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></div>
+            </div>
           </div>
-          <div class="gallery-item reveal" style="--gi-gradient: linear-gradient(135deg,#2a1a10,#6b4020)" aria-label="Recliner suite in customer living room">
-            <div class="gallery-item__inner"><span class="gallery-item__label">Recliner Suite</span></div>
+          <div class="gallery-item reveal" data-lb="3" aria-label="Grey premium cinema recliner with LED lighting and built-in speakers — click to enlarge">
+            <img src="img/gallery-4.jpg" alt="Grey premium cinema recliner with pink LED lighting" loading="lazy">
+            <div class="gallery-item__inner">
+              <span class="gallery-item__label">Premium Cinema Recliner</span>
+              <div class="gallery-item__zoom" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></div>
+            </div>
           </div>
-          <div class="gallery-item gallery-item--wide reveal" style="--gi-gradient: linear-gradient(135deg,#1a1624,#3d2d5a)" aria-label="Master bedroom with wardrobe and bed set">
-            <div class="gallery-item__inner"><span class="gallery-item__label">Master Bedroom</span></div>
+          <div class="gallery-item reveal" data-lb="4" aria-label="Luxury tufted cream bed frame with bedside table in customer bedroom — click to enlarge">
+            <img src="img/gallery-5.jpg" alt="Luxury cream tufted bed frame in customer bedroom" loading="lazy">
+            <div class="gallery-item__inner">
+              <span class="gallery-item__label">Luxury Bed Frame</span>
+              <div class="gallery-item__zoom" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></div>
+            </div>
           </div>
-          <div class="gallery-item reveal" style="--gi-gradient: linear-gradient(135deg,#1f1510,#5a3810)" aria-label="Sofa set in open plan living area">
-            <div class="gallery-item__inner"><span class="gallery-item__label">Open Plan Living</span></div>
-          </div>
-          <div class="gallery-item reveal" style="--gi-gradient: linear-gradient(135deg,#0f1f1a,#2a5040)" aria-label="Sofa bed in guest room">
-            <div class="gallery-item__inner"><span class="gallery-item__label">Guest Room</span></div>
-          </div>
-          <div class="gallery-item reveal" style="--gi-gradient: linear-gradient(135deg,#251015,#5a2530)" aria-label="Kids bedroom furniture delivered and assembled">
-            <div class="gallery-item__inner"><span class="gallery-item__label">Kids Bedroom</span></div>
+          <div class="gallery-item reveal" data-lb="5" aria-label="Grey corner sofa bed with pull-out storage being delivered to customer — click to enlarge">
+            <img src="img/gallery-6.jpg" alt="Grey corner sofa bed with storage delivered to customer" loading="lazy">
+            <div class="gallery-item__inner">
+              <span class="gallery-item__label">Corner Sofa Bed</span>
+              <div class="gallery-item__zoom" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></div>
+            </div>
           </div>
         </div>
         <div class="gallery__cta">
@@ -661,6 +720,7 @@
             <li><a href="#shop" data-filter-link="sofas">Electric Recliners</a></li>
             <li><a href="#shop" data-filter-link="beds">Beds &amp; Mattresses</a></li>
             <li><a href="#shop" data-filter-link="bedroom">Bedroom Furniture</a></li>
+            <li><a href="#shop" data-filter-link="tables">Tables &amp; Chairs</a></li>
             <li><a href="#shop" data-filter-link="sale">Sale &amp; Clearance</a></li>
           </ul>
         </div>
@@ -695,6 +755,27 @@
       </div>
     </div>
   </footer>
+
+  <!-- ═══ LIGHTBOX ═══ -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Photo viewer">
+    <div class="lightbox__backdrop" id="lb-backdrop"></div>
+    <button class="lightbox__close" id="lb-close" aria-label="Close photo viewer">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <button class="lightbox__prev" id="lb-prev" aria-label="Previous photo">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <div class="lightbox__img-wrap">
+      <img id="lb-img" src="" alt="" class="lightbox__img">
+    </div>
+    <button class="lightbox__next" id="lb-next" aria-label="Next photo">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+    <div class="lightbox__footer">
+      <span class="lightbox__label" id="lb-label"></span>
+      <span class="lightbox__count" id="lb-count"></span>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
